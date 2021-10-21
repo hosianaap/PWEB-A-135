@@ -143,20 +143,12 @@
                 $("#nrp-message").text("NRP harus lebih dari 10 digit");
                 event.preventDefault();
             }
-            else {
-                $("#nrp-message").hide();
-                event.preventDefault();
-            }
 
             // Validasi jurusan
             var inputJurusan = $("#jurusan").val();
 
             if (inputJurusan == "0") {
                 $("#jurusan-message").text("Jurusan harus diisi");
-                event.preventDefault();
-            }
-            else {
-                $("#jurusan-message").hide();
                 event.preventDefault();
             }
 
@@ -168,10 +160,6 @@
             }
             else if (inputHandphone.length < 10) {
                 $("#handphone-message").text("No Handphone harus lebih dari 10 digit");
-                event.preventDefault();
-            }
-            else {
-                $("#handphone-message").hide();
                 event.preventDefault();
             }
         });
